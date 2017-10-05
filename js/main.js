@@ -14,6 +14,31 @@ what do we need for our zodiac object to work?
 	e. display information on the screen
 		- HTML elements with IDs
 		- use innerHTML to change the insides of those elements to data from the objects
-		
 
 */
+
+$(document).ready(function() {
+
+	$('.btn').click(
+		function() {
+			var sign = $(this).text().toLowerCase().trim()
+			var url = `http://sandipbgt.com/theastrologer/api/horoscope/${sign}/today/`
+			$.getJSON(url)
+			.done(
+				function(data){
+					var s = data.horoscope
+					var n = s.indexOf('(')
+					s = s.substring(0, n != -1 ? n : s.length)
+					
+					$('#content').text(s)
+				}
+			)
+		}
+	),
+	$('.card').mouseenter(function() {
+    	$(this).effect('shake', 2000)
+	})
+	
+})
+
+ 

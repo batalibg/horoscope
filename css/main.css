@@ -1,4 +1,55 @@
-.container-fluid {
-	height: 500px;
-	background-image: url('../images/sunset.jpg');
+
+body {
+	text-align: center;
+	background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
+
+h1,h3 {
+	color: white;
+}
+
+#content {
+	color: white;
+	font-size: 24px;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.btn {
+	transition: 500ms;
+	padding: 20px;
+	margin: 15px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	border: 2px solid black;
+}
+
+.btn:hover {
+	color: black;
+	background-color: purple;
+	transition: 500ms;
+}
+
+.card {
+	width: 100px;
+	height: auto;
+	padding-top: 5px;
+}
+
+.box {
+	border: 3px solid white;
+	margin: 20px;
+	height: auto;
+	width: auto;
+}
+
+
+
+
