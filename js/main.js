@@ -18,9 +18,9 @@ what do we need for our zodiac object to work?
 */
 
 $(document).ready(function() {
+	$.support.cors = true;
 	$('.btn').click(
 		function() {
-			$.support.cors = true;
 			var sign = $(this).text().toLowerCase().trim()
 			var url = `https://sandipbgt.com/theastrologer/api/horoscope/${sign}/today/`
 			$.getJSON(url)
