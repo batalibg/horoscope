@@ -18,7 +18,7 @@ what do we need for our zodiac object to work?
 */
 
 $(document).ready(function() {
-
+	$.support.cors = true;
 	$('.btn').click(
 		function() {
 			var sign = $(this).text().toLowerCase().trim()
@@ -29,7 +29,6 @@ $(document).ready(function() {
 					var s = data.horoscope
 					var n = s.indexOf('(')
 					s = s.substring(0, n != -1 ? n : s.length)
-					
 					$('#content').text(s)
 				}
 			)

@@ -22,6 +22,7 @@ h1,h3 {
 }
 
 .btn {
+	border-radius: 10%;
 	transition: 500ms;
 	padding: 20px;
 	margin: 15px;
