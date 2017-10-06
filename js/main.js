@@ -22,7 +22,7 @@ $(document).ready(function() {
 	$('.btn').click(
 		function() {
 			var sign = $(this).text().toLowerCase().trim()
-			var url = `http://sandipbgt.com/theastrologer/api/horoscope/${sign}/today/`
+			var url = `https://sandipbgt.com/theastrologer/api/horoscope/${sign}/today/`
 			$.getJSON(url)
 			.done(
 				function(data){
